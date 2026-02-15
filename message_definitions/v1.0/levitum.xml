@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <mavlink>
-  <!-- XML file for additional custom LEVITUM mavlink messages -->
-  <include>common.xml</include>
+  <!-- XML file for additional custom LEVITUM mavlink messages. Based on common dialect-->
+  <include>common.xml</include> 
   <version>0</version>
   <dialect>0</dialect>
   <messages>

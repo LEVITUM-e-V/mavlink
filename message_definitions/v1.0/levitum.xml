@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<mavlink>
+  <!-- XML file for additional custom LEVITUM mavlink messages -->
+  <include>common.xml</include>
+  <version>0</version>
+  <dialect>0</dialect>
+  <messages>
+    <message id="50001" name="PCU_TELEMETRY">
+      <description>Telemetry data from the Power Control Unit (PCU).</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (UNIX Epoch time or time since system boot).</field>
+      <field type="float" name="stack_voltage" units="V">Stack Voltage.</field>
+      <field type="float" name="load_current" units="A">Load Current.</field>
+      <field type="float" name="power" units="W">Power output.</field>
+      <field type="float" name="energy" units="Wh">Energy produced.</field>
+      <field type="float" name="battery_voltage" units="V">Battery Voltage.</field>
+      <field type="float" name="battery_current" units="A">Battery Current.</field>
+      <field type="float" name="load_voltage" units="V">Load Voltage.</field>
+      <field type="float" name="stack_temp_1" units="degC">Stack Temperature Sensor 1.</field>
+      <field type="float" name="stack_temp_2" units="degC">Stack Temperature Sensor 2.</field>
+      <field type="float" name="stack_temp_3" units="degC">Stack Temperature Sensor 3.</field>
+      <field type="float" name="stack_temp_4" units="degC">Stack Temperature Sensor 4.</field>
+      <field type="float" name="target_stack_temp" units="degC">Target Stack Temperature.</field>
+      <field type="float" name="board_temp" units="degC">Board Temperature.</field>
+      <field type="float" name="h2_supply_pressure" units="mV">H2 Storage Supply Pressure sensor output.</field>
+      <field type="float" name="tank_pressure">Tank Pressure.</field>
+      <field type="float" name="fan_speed" units="%">Fan Speed percentage.</field>
+      <field type="uint8_t" name="operation_state">Operation state numeric code from PCU.</field>
+    </message>
+  </messages>
+</mavlink>

@@ -1,6 +1,18 @@
 [![Build Status](https://github.com/mavlink/mavlink/workflows/Test%20and%20deploy/badge.svg)](https://github.com/mavlink/mavlink/actions?query=branch%3Amaster)
 
-# MAVLink
+# MAVLink (LEVITUM Fork)
+
+This is a LEVITUM-specific fork of the [mavlink/mavlink](https://github.com/mavlink/mavlink) repository. It is used as a submodule in our PX4-Autopilot fork at `src/modules/mavlink/mavlink`.
+
+This fork holds definitions for custom MAVLink messages, such as `PCU_TELEMETRY` (message ID 50001) for fuel cell telemetry. These are defined in the LEVITUM dialect at `message_definitions/v1.0/levitum.xml`, which builds upon the `common.xml` dialect.
+
+---
+
+## Upstream README
+
+*The following is the original upstream documentation.*
+
+# MAVLink (Upstream)
 
 MAVLink -- Micro Air Vehicle Message Marshalling Library.
 
